@@ -21,7 +21,7 @@ button.addEventListener('click', ()=>{
    let para = document.createElement('p');
    para.setAttribute("contenteditable", "true");
    let newImages = document.createElement('img');
-   newImages.src = "./download (1).png";
+   newImages.src = "./download(1).png";
    newNote.append(para);
    newNote.append(newImages);
    container.append(newNote);
