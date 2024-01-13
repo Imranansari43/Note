@@ -4,7 +4,7 @@ const newContainer = document.querySelectorAll('note');
 const save = document.querySelector('.save');
 
 
-getdata();
+setdata();
 function setdata(){
    localStorage.setItem("items", container.innerHTML);
 }
