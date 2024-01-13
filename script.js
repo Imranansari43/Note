@@ -4,7 +4,7 @@ const newContainer = document.querySelectorAll('note');
 const save = document.querySelector('.save');
 
 
-setdata();
+getdata();
 function setdata(){
    localStorage.setItem("items", container.innerHTML);
 }
@@ -12,7 +12,9 @@ function setdata(){
 
 function getdata(){
   let getdata =  localStorage.getItem("items");
+   if(getdata !== null){
   container.innerHTML = `${getdata}`;
+   }
 }
 
 button.addEventListener('click', ()=>{
